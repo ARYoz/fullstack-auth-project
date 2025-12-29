@@ -28,6 +28,7 @@ The project is structured as a monorepo containing both frontend and backend app
 
 ##  Project Structure
 
+text'''
 
 ├── frontend
 │ ├── src
