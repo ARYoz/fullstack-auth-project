@@ -28,6 +28,7 @@ The project is structured as a monorepo containing both frontend and backend app
 
 ##  Project Structure
 
+
 ├── frontend
 │ ├── src
 │ │ ├── components
@@ -79,14 +80,19 @@ The project is structured as a monorepo containing both frontend and backend app
 ## Start the backend
 
 cd backend
+
 npm install
+
 npm run dev
 
 ## Start the frontend
 
 cd frontend
+
 npm install
+
 npm run dev
+
 
 ## Authentication Flow
 
@@ -98,34 +104,49 @@ npm run dev
 - A JWT token is issued and stored on the client
 - Authenticated routes use the token for access
 
+
 # API Endpoints
 
 ## POST /api/auth/signup
+
 Register a new user and send OTP
 
 {
   "email": "user@example.com",
+
   "password": "password123"
 }
 
+
+
 ## POST /api/auth/verify-otp
+
 Verify OTP and activate account
 
 {
   "email": "user@example.com",
+
   "otp": "123456"
 }
 
+
+
 ## POST /api/auth/login
+
 Login user
 
 {
   "email": "user@example.com",
+
   "password": "password123"
 }
 
+
+
 ## GET /api/auth/me
+
 Get authenticated user information
+
 Headers:
 
 Authorization: Bearer <JWT_TOKEN>
