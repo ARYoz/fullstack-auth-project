@@ -119,6 +119,10 @@ Register a new user and send OTP
 
 
 
+
+
+
+
 ## POST /api/auth/verify-otp
 
 Verify OTP and activate account
@@ -128,6 +132,10 @@ Verify OTP and activate account
 
   "otp": "123456"
 }
+
+
+
+
 
 
 
@@ -143,6 +151,10 @@ Login user
 
 
 
+
+
+
+
 ## GET /api/auth/me
 
 Get authenticated user information
@@ -150,6 +162,10 @@ Get authenticated user information
 Headers:
 
 Authorization: Bearer <JWT_TOKEN>
+
+
+
+
 
 
 ## Features
