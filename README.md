@@ -26,55 +26,6 @@ The project is structured as a monorepo containing both frontend and backend app
 
 ---
 
-##  Project Structure
-
-'''text
-
-├── frontend
-│ ├── src
-│ │ ├── components
-│ │ │ ├── Login.jsx
-│ │ │ ├── Signup.jsx
-│ │ │ └── Welcome.jsx
-│ │ ├── services
-│ │ │ └── api.js
-│ │ ├── utils
-│ │ │ ├── jwt.js
-│ │ │ └── validation.js
-│ │ ├── App.jsx
-│ │ └── main.jsx
-│ ├── .env
-│ └── package.json
-│
-├── backend
-│ ├── config
-│ │ └── database.js
-│ ├── controllers
-│ │ └── auth
-│ │ ├── loginController.js
-│ │ ├── signupController.js
-│ │ ├── verifyOTPController.js
-│ │ └── userController.js
-│ ├── middleware
-│ │ └── auth.js
-│ ├── models
-│ │ └── User.js
-│ ├── routes
-│ │ └── auth
-│ │ ├── index.js
-│ │ ├── login.js
-│ │ ├── signup.js
-│ │ ├── verifyOTP.js
-│ │ └── user.js
-│ ├── utils
-│ │ ├── jwt.js
-│ │ ├── otp.js
-│ │ └── email.js
-│ ├── server.js
-│ ├── .env
-│ └── package.json
-│
-└── README.md
 
 # Running the Project
 
