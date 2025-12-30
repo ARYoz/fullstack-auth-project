@@ -1,10 +1,19 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import connectDB from './config/database.js';
 import authRoutes from './routes/auth/index.js';
 
-dotenv.config();
+const filename = fileURLToPath(import.meta.url);
+const dirname = path.dirname(filename);
+
+dotenv.config({ path: path.join(dirname, '.env') });
+
+console.log('MONGODB_URI:', process.env.MONGODB_URI);
+
+
 connectDB();
 
 const app = express();
