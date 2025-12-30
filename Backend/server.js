@@ -13,7 +13,6 @@ dotenv.config({ path: path.join(dirname, '.env') });
 
 console.log('MONGODB_URI:', process.env.MONGODB_URI);
 
-
 connectDB();
 
 const app = express();

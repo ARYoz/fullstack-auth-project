@@ -1,14 +1,14 @@
 
 export const saveToken = (token) => {
   const expiryTime = Date.now() + parseInt(import.meta.env.VITE_JWT_EXPIRY_MINUTES) * 60 * 1000;
-  localStorage.setItem(import.meta.env.JWT_KEY, token);
-  localStorage.setItem(import.meta.env.JWT_EXPIRY_KEY, expiryTime.toString());
+  localStorage.setItem(import.meta.env.VITE_JWT_KEY, token);
+  localStorage.setItem(import.meta.env.VITE_JWT_EXPIRY_KEY, expiryTime.toString());
 };
 
 
 export const getToken = () => {
-  const token = localStorage.getItem(import.meta.env.JWT_KEY);
-  const expiryTime = localStorage.getItem(import.meta.env.JWT_EXPIRY_KEY);
+  const token = localStorage.getItem(import.meta.env.VITE_JWT_KEY);
+  const expiryTime = localStorage.getItem(import.meta.env.VITE_JWT_EXPIRY_KEY);
   
   if (!token || !expiryTime) {
     return null;
@@ -25,8 +25,8 @@ export const getToken = () => {
 
 
 export const removeToken = () => {
-  localStorage.removeItem(import.meta.env.JWT_KEY);
-  localStorage.removeItem(import.meta.env.JWT_EXPIRY_KEY);
+  localStorage.removeItem(import.meta.env.VITE_JWT_KEY);
+  localStorage.removeItem(import.meta.env.VITE_JWT_EXPIRY_KEY);
 };
 
 
